@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-container">
+      <div class="logo">
+        <img src="img/orchid.png" alt="logo-icon" />
+        <h1>Cymbium</h1>
+      </div>
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/it/foto/fiori-luminosi-e-colorati-sono-esposti-in-una-finestra-CdM_2dnvDdY"
+          >Danny Greenberg</a
+        >
+        on Unsplash,
+        <a
+          href="https://www.flaticon.com/free-icons/orchid"
+          title="orchid icons"
+          >Orchid icon created by Freepik - Flaticon</a
+        >
+      </p>
+    </div>
+    <div class="form-container">
+      <div class="form-header">
+        <h2>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </h2>
+        <h2>You <em>know</em> you want to</h2>
+      </div>
+
+      <form action="#">
+        <h2>Let's do this!</h2>
+        <div class="field">
+          <label for="name">FIRST NAME</label>
+          <input type="text" name="user_name" id="name" />
+        </div>
+        <div class="field">
+          <label for="last-name">LAST NAME</label>
+          <input type="text" name="user_last_name" id="last_name" />
+        </div>
+        <div class="field">
+          <label for="email">EMAIL</label>
+          <input type="email" name="user_email" id="email" />
+        </div>
+        <div class="field">
+          <label for="tel">PHONE NUMBER</label>
+          <input type="tel" name="user_tel" id="tel" />
+        </div>
+        <div class="field">
+          <label for="pwd">PASSWORD</label>
+          <input
+            type="password"
+            name="user_pwd"
+            id="pwd"
+            pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/"
+          />
+        </div>
+        <div class="field">
+          <label for="confirm_pwd">CONFIRM PASSWORD</label>
+          <input
+            type="password"
+            name="user_confirm_pwd"
+            id="confirm_pwd"
+            pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/"
+          />
+        </div>
+      </form>
+      <div class="form-footer">
+        <button type="submit" formaction="#">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>

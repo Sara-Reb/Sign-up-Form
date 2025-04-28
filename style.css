@@ -1,0 +1,161 @@
+/* Define font face */
+@font-face {
+  font-family: "AMORIA";
+  src: url("/fonts/AMORIARegular.woff2") format("woff2"),
+    url("/fonts/AMORIARegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+body {
+  background-color: white;
+  display: flex;
+  height: 100vh;
+  width: max(80vw, 1450px);
+
+  margin: auto;
+}
+
+.background-container {
+  position: relative;
+  height: 100%;
+  width: clamp(400px, 40%, calc(100vh / 0.67));
+  background-image: url(/img/danny-greenberg-CdM_2dnvDdY-unsplash.jpg);
+  background-size: cover;
+  background-position: top;
+
+  background-repeat: no-repeat;
+}
+
+.form-container {
+  flex: 1;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo > img {
+  height: 70%;
+}
+
+h1 {
+  font: 3rem "AMORIA", Serif;
+  color: white;
+}
+
+.background-container p {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+}
+
+.background-container a {
+  color: inherit;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-shadow: 0px 2px 5px lightgrey;
+  padding: 2.5rem;
+}
+
+form label {
+  display: block;
+}
+
+form h2 {
+  width: 100%;
+}
+
+form .field {
+  width: 45%;
+}
+
+form label {
+  margin-bottom: 2px;
+  font-size: 0.8rem;
+}
+
+form input {
+  border-radius: 8px;
+  height: 40px;
+  width: clamp(180px, 80%, 300px);
+  border: 1px solid #e5e7eb;
+  outline: none;
+  font: inherit;
+  padding: 8px;
+}
+
+.form-container h2 + h2 {
+  margin: 2rem 0;
+}
+
+.form-header,
+.form-footer {
+  padding: 2.5rem;
+}
+
+.form-container button {
+  height: 50px;
+  width: 250px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  background-color: rgb(180, 97, 97);
+  color: white;
+  border: none;
+  font-weight: 800;
+}
+
+.form-footer p {
+  margin-top: 2.5rem;
+  font-size: 1rem;
+}
+
+.form-footer a {
+  text-decoration: none;
+  color: rgb(180, 97, 97);
+  font-weight: 600;
+}
+
+form input[type="text"]:focus {
+  border-color: blue;
+  box-shadow: 2px 2px 5px lightgray;
+}
+
+form input:invalid {
+  border-color: red;
+}
