@@ -19,7 +19,7 @@
 
 /* Root variables and base settings */
 :root {
-  font-size: 18px;
+  font-size: 16px;
   /* Default background color for fallback or non-body elements */
   background-color: black;
 }
